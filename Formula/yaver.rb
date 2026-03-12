@@ -1,28 +1,28 @@
 class Yaver < Formula
   desc "Use Claude from anywhere — P2P CLI for Yaver"
   homepage "https://yaver.io"
-  version "1.0.0"
+  version "1.0.1"
   license "Proprietary"
 
   on_macos do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-arm64"
-      sha256 "2cb028e0602a0d55061677bd0b99dde12d5c609a798a742c69be6474d6524d04"
+      sha256 "b44c8ef7024df51cc1df9d3f5b001051b4ce3c1489df7c63a05c02a26a3e7c40"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-amd64"
-      sha256 "10e11e672093a84d70040e17b002a25931e9d26877d52fe22fa010a0188d261d"
+      sha256 "a1ff037323fbf61c1d1eb50e58e1f64bceb25498880cfc15b131d2a44c0f831a"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-arm64"
-      sha256 "0dc10ff61bd2058e81d9335dd8972353fa45dd3f5592738d4db0f6e8eaa318c7"
+      sha256 "393316a23dce080dde2421deb9c99049930a6f1ca0d08af94be87e6a5d13b7cd"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-amd64"
-      sha256 "9ebd49b11a8291c8d7eeb520e7ceb36786193adeae445543c0c7a1b66d11c31f"
+      sha256 "732decf714b83c8ef3d70e4e80409fa1beab1d86c2a36592e1e1418a4c5f5fa4"
     end
   end
 
