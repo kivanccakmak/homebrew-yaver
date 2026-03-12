@@ -1,28 +1,28 @@
 class Yaver < Formula
-  desc "Use Claude from anywhere — P2P CLI for Yaver"
+  desc "MCP-standard AI agent — use Claude from anywhere, agent-to-agent"
   homepage "https://yaver.io"
-  version "1.0.1"
+  version "1.2.0"
   license "Proprietary"
 
   on_macos do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-arm64"
-      sha256 "b44c8ef7024df51cc1df9d3f5b001051b4ce3c1489df7c63a05c02a26a3e7c40"
+      sha256 "49ffcb0689b132af8d4d887c93e725df6caf636a966337eaaa2a46c02f15f946"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-amd64"
-      sha256 "a1ff037323fbf61c1d1eb50e58e1f64bceb25498880cfc15b131d2a44c0f831a"
+      sha256 "b5a77f0f85143e94b0c16ca4ee109dc9399cb353c2202c92018d2f84652a2c39"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-arm64"
-      sha256 "393316a23dce080dde2421deb9c99049930a6f1ca0d08af94be87e6a5d13b7cd"
+      sha256 "a03063e87b4c6c4e54a15d31be16e996b46928bb5f6c6954bea47d4091f40000"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-amd64"
-      sha256 "732decf714b83c8ef3d70e4e80409fa1beab1d86c2a36592e1e1418a4c5f5fa4"
+      sha256 "9e5317acfe8a95c1da78bcc5f3d178e74d724820f4f4f01b8adee681d3cc3374"
     end
   end
 
@@ -34,21 +34,13 @@ class Yaver < Formula
 
   def caveats
     <<~EOS
-      To use yaver, make sure Homebrew's bin is in your PATH:
-
-        # For bash — add to ~/.bashrc or ~/.bash_profile:
-        eval "$(/opt/homebrew/bin/brew shellenv)"
-
-        # For zsh — add to ~/.zshrc:
-        eval "$(/opt/homebrew/bin/brew shellenv)"
-
-      Then restart your terminal or run:
-        source ~/.zshrc  # or source ~/.bashrc
-
       Get started:
         yaver auth        Sign in (opens browser)
-        yaver serve       Start the agent on this machine
+        yaver serve       Start the MCP agent on this machine
         yaver connect     Connect to your dev machine
+
+      MCP endpoint available at http://localhost:8080/mcp when serving.
+      Any MCP-compatible client can connect to your agent.
     EOS
   end
 
