@@ -1,28 +1,28 @@
 class Yaver < Formula
   desc "MCP-standard AI agent — use Claude from anywhere, agent-to-agent"
   homepage "https://yaver.io"
-  version "1.2.1"
+  version "1.2.2"
   license "Proprietary"
 
   on_macos do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-arm64"
-      sha256 "f75370d8b0afb649dec4523be6a02a3275c08adf3c6235f0049488a9ff192cff"
+      sha256 "561c3a4aacb61fbdb74404e663f6916e0c07346fb881745302732ff0298bd82d"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-amd64"
-      sha256 "fbc1428cf1137bc2f6e931c20bcf5e1174feaf3466ce1bc09cc55f72731413a0"
+      sha256 "da891b29ab6fe62f25984236d371b26b2a1836c1df8a2fed1fbe78e95b9460a8"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-arm64"
-      sha256 "d0da114a914a78e93421d55cb9e45d78eabe9f9440493acf127d64dc9030ada5"
+      sha256 "1d0076ea7d52ad1de2eba99d5a5e077cfd70f7dbdbab61b5af601eadd5969dfa"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-amd64"
-      sha256 "d40c358365ecb101e1a7efae7e4ccb1c1ad401ccf9225d01d9b3207befe777ba"
+      sha256 "44761fb8641449015be5dafa748383fe413bf1f388c3cc978cba0122195d3ae2"
     end
   end
 
@@ -39,7 +39,7 @@ class Yaver < Formula
         yaver serve       Start the MCP agent on this machine
         yaver connect     Connect to your dev machine
 
-      MCP endpoint available at http://localhost:8080/mcp when serving.
+      MCP endpoint available at http://localhost:18080/mcp when serving.
       Any MCP-compatible client can connect to your agent.
     EOS
   end
