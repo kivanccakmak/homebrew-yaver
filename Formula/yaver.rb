@@ -7,22 +7,22 @@ class Yaver < Formula
   on_macos do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-arm64"
-      sha256 "999a097918541ea93ccbdefe2556c980c4cc9771f88d35462bce6bb2685c1227"
+      sha256 "5d5279e6e5daa8cca9f5f8add832c5a633c1963d62bb730d473ca346216713da"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-amd64"
-      sha256 "75a5ae7d2267ae4aba3714ab92fccdfed0e89f8e76235298751dba10950a01f5"
+      sha256 "aaff1279c0b945c308a3222c7c5c8a78ed07593c9177eaae2f88196558a240dc"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-arm64"
-      sha256 "1418028ee6c01cbe5ed496b48879fff0af1120ec2d29f06d26099787afc128e5"
+      sha256 "d392ccba2dd4b3b482e649b08dc6b74f8ec60bcea3c7e65ced19dc3c7dd26183"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-amd64"
-      sha256 "ee92030f3c354ea161b314776fdb932d92a2f67bd9547848ac6939cc159db0ee"
+      sha256 "98a6f56b24c9bbe08a722a2d8baf99696ec4b970f218e294d75cb4461799ef31"
     end
   end
 
