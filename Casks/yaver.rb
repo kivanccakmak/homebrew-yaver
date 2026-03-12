@@ -1,6 +1,6 @@
 cask "yaver" do
   version "1.0.0"
-  sha256 "9c58b980ba7713f761dff35b4000e007064aebed654f9e7289e1bba6aaca5af3"
+  sha256 "7485944ca5cef4b501ea470ca0597ee7c9a1d8bc449355cac5f05d39ac841e77"
 
   url "https://github.com/kivanccakmak/yaver-desktop/releases/download/v#{version}/yaver-#{version}-arm64.dmg"
   name "Yaver"
