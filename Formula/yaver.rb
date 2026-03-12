@@ -1,28 +1,28 @@
 class Yaver < Formula
   desc "MCP-standard AI agent — use Claude from anywhere, agent-to-agent"
   homepage "https://yaver.io"
-  version "1.2.3"
+  version "1.2.4"
   license "Proprietary"
 
   on_macos do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-arm64"
-      sha256 "991078d7011580577a1ad65fe44f5cac8c23ee7099ac07369d2b976749cc6eec"
+      sha256 "ac9f1eebc7298a07829a36c68da89f1b8cedd893383676edd069710b0555a15f"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-amd64"
-      sha256 "dd149f483af12b7ff95bbebf13765d92ad7245be0ef5d8bb25cfe441bba12bd9"
+      sha256 "bb970ed252d4c2bb935874fa4753296cf11f3e8f134e03e43edb6da85a08cf5b"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-arm64"
-      sha256 "0b6f06fd80ed1acb74362152efcab4c838a87b9679594e468c10eda7e54ae750"
+      sha256 "71e15cfe902d0fb05c9baa2145d64e77ebf49a35e4242e25cca59f3b994dd555"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-amd64"
-      sha256 "73fc390ace2557a03c0cae3bd3fac53e737d467646e6782108b06216f84f94d2"
+      sha256 "422fc947b09893f6fee818fdee4e78269e2c7393c9729d90dd8af31242ec313d"
     end
   end
 
