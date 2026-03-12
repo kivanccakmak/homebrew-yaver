@@ -32,6 +32,26 @@ class Yaver < Formula
     chmod "+x", bin/"yaver"
   end
 
+  def caveats
+    <<~EOS
+      To use yaver, make sure Homebrew's bin is in your PATH:
+
+        # For bash — add to ~/.bashrc or ~/.bash_profile:
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+
+        # For zsh — add to ~/.zshrc:
+        eval "$(/opt/homebrew/bin/brew shellenv)"
+
+      Then restart your terminal or run:
+        source ~/.zshrc  # or source ~/.bashrc
+
+      Get started:
+        yaver auth        Sign in (opens browser)
+        yaver serve       Start the agent on this machine
+        yaver connect     Connect to your dev machine
+    EOS
+  end
+
   test do
     assert_match "yaver", shell_output("#{bin}/yaver version")
   end
