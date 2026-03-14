@@ -1,28 +1,28 @@
 class Yaver < Formula
   desc "Run AI coding agents from your phone — Claude, Codex, Aider, or custom"
   homepage "https://yaver.io"
-  version "1.7.0"
+  version "1.8.0"
   license "Proprietary"
 
   on_macos do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-arm64"
-      sha256 "99cd792f3d8a79830bf18df519c5343ec698e841d67a3ee9746be015a0f6a563"
+      sha256 "8287074b904df6d244e197a93ed254557e75d51b65accc0067f0ad7419d3ee27"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-amd64"
-      sha256 "e1b9c9d3b9e733b827e8d466bdf39780c2704688c513fe598447a7fac6a37b00"
+      sha256 "fe4a0274b2996866fb76bd9e1bc1edc12149d6a0377e334b5184d2c174a5294f"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-arm64"
-      sha256 "f433fc3f37ca26727f66c160bd330f4b23bd126d795cfbb518ecc6ea7db0efdc"
+      sha256 "d391331605e3540cef33cfb9f4053ec6f3dbcbb3dfaca039652e2ec0652d5d31"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-amd64"
-      sha256 "15882348cfa119ba5139ccf8f5449e55b14312da482e1f4648b13211b25e8966"
+      sha256 "e3beec8a9660a9c4bf856704681a9af89c0efe364d8bf53de92712e2db4cf701"
     end
   end
 
@@ -35,9 +35,7 @@ class Yaver < Formula
   def caveats
     <<~EOS
       Get started:
-        yaver auth          Sign in (opens browser)
-        yaver serve         Start the agent on this machine
-        yaver set-runner    Choose your AI agent (claude, codex, aider, custom)
+        yaver auth          Sign in & start the agent
 
       Supports Claude Code, OpenAI Codex, Aider, or any custom CLI tool.
     EOS
