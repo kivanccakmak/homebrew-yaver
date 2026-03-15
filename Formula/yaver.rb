@@ -1,28 +1,28 @@
 class Yaver < Formula
   desc "Run AI coding agents from your phone — Claude, Codex, Aider, or custom"
   homepage "https://yaver.io"
-  version "1.8.0"
+  version "1.25.0"
   license "Proprietary"
 
   on_macos do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-arm64"
-      sha256 "8287074b904df6d244e197a93ed254557e75d51b65accc0067f0ad7419d3ee27"
+      sha256 "26dcd91fe2b60ab9acd11a8eda014441b139054a5eacbdb17b1785a7c3a1713b"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-darwin-amd64"
-      sha256 "fe4a0274b2996866fb76bd9e1bc1edc12149d6a0377e334b5184d2c174a5294f"
+      sha256 "bc0da995881f13381262428b7906433ed6387aee5794c4af967a010b3eb0023a"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-arm64"
-      sha256 "d391331605e3540cef33cfb9f4053ec6f3dbcbb3dfaca039652e2ec0652d5d31"
+      sha256 "17dc2029e825980a480c4ad56ca464c522f5ba46c7585ae278839e6e4641400d"
     end
     on_intel do
       url "https://github.com/kivanccakmak/yaver-cli/releases/download/v#{version}/yaver-linux-amd64"
-      sha256 "e3beec8a9660a9c4bf856704681a9af89c0efe364d8bf53de92712e2db4cf701"
+      sha256 "edad246f7232b8e22582a76e3602cdfc4df5fc652eb17245cd09fac7b36095b1"
     end
   end
 
