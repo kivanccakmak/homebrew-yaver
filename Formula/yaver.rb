@@ -7,20 +7,20 @@ class Yaver < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.46.0/yaver-darwin-arm64"
-      sha256 "9b4bc9293659f2423c68d1a067aaf8796793d96af8b6135bf9b121997c140964"
+      sha256 "22458cd13e3e3d21e9dd2f0c6d69aa64dcdb0408c3d8e18c7e9a32a06546a4c6"
     else
       url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.46.0/yaver-darwin-amd64"
-      sha256 "b933c0c6fb6ea5774cc85d1dba889d536a55be0e628ca995ea1856f2721cbc06"
+      sha256 "3fda511965f5bb093a5470c57353ca4935b97bf20ea1f6c64cbb24dfa871c509"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.46.0/yaver-linux-arm64"
-      sha256 "af623dd3a1a5d611933685f9e76e9d8872414917d660b8f032813e38f25a7810"
+      sha256 "9b53a1691f82b30d1aee0b783c1b7203c01c0e8c715d3769577b650ee19ae9e2"
     else
       url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.46.0/yaver-linux-amd64"
-      sha256 "979c0210c67e083bcfb77d1b7fdc96db9b61e9c772174e1521a4a9af796f1f5d"
+      sha256 "43e7cb3ed552bf5d873d73e7fe14d0c190ef67489d352c7abe3736ca9291cb36"
     end
   end
 
