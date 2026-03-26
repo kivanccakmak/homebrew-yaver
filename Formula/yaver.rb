@@ -1,29 +1,28 @@
 class Yaver < Formula
   desc "AI coding agent on your phone — P2P remote control for Claude Code, Codex, Aider, Ollama"
   homepage "https://yaver.io"
-  version "1.53.0"
+  version "1.54.0"
   license "MIT"
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.53.0/yaver-darwin-arm64"
-      sha256 "2be242c9d1257c685cab20e0ae63c4e9ff4def62a6a19540b7c98deca708528d"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.54.0/yaver-darwin-arm64.tar.gz"
+      sha256 "d44689f6fc50d8706d6f360ced3b25bd8b163086f177abc3526571257e3f5c17"
     else
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.53.0/yaver-darwin-amd64"
-      sha256 "d1918bc05332933ecc03b56aa2cb533ba84982ee8b4f48acdbab01e2f31afb99"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.54.0/yaver-darwin-amd64.tar.gz"
+      sha256 "722110f677ade304feb5a808320e72ec3058297f7defd4807a1b8f148e5991e7"
     end
   end
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.53.0/yaver-linux-arm64"
-      sha256 "442a6dfd53664cbebc4f8276153ee98183bc8f644fb967dae283cd6246a91cfe"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.54.0/yaver-linux-arm64.tar.gz"
+      sha256 "92adbf42a07a8d1abcf5591bedc01d96a771f4fd1e736752e00bd47fb8d25d5d"
     else
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.53.0/yaver-linux-amd64"
-      sha256 "83a1f6d2e5204e98a3bd07b8cfbf4fe45b2b1bfa9b73d7650eea1f992955edc2"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.54.0/yaver-linux-amd64.tar.gz"
+      sha256 "cd44a1717c29fcc4b94dbaaa97dadede1ae316535ddfb7cbfdcd0e67ac67e709"
     end
   end
   def install
-    binary = Dir["yaver-*"].first
-    bin.install binary => "yaver"
+    bin.install "yaver"
   end
   test do
     assert_match "yaver", shell_output("#{bin}/yaver version")
