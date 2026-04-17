@@ -1,26 +1,26 @@
 class Yaver < Formula
   desc "AI coding agent on your phone — P2P remote control for Claude Code, Codex, Aider, Ollama"
   homepage "https://yaver.io"
-  version "1.95.2"
+  version "1.95.3"
   license "AGPL-3.0-only"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.95.2/yaver-darwin-arm64.tar.gz"
-      sha256 "6d03c9ee4dfe1c75a8bee032b69e347d60c549fd7046cbdc3fedcd0a3c0b1788"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.95.3/yaver-darwin-arm64.tar.gz"
+      sha256 "c987a61cbb78ac32b64d612b32252c19c57ac8cdf43e42d21dff679db8bec5c9"
     else
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.95.2/yaver-darwin-amd64.tar.gz"
-      sha256 "33b9e0441658df6bdbc7dc12aafe730a447e3816f7b2a42065e8b4db12b3c57c"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.95.3/yaver-darwin-amd64.tar.gz"
+      sha256 "ac10b48b3adaf0f67239c6489ffa525d249084151e5f8049a88e75ec9fe43692"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.95.2/yaver-linux-arm64.tar.gz"
-      sha256 "561274b787b239d9360f446fd7686faae53de31be77b3a653809a6773640faeb"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.95.3/yaver-linux-arm64.tar.gz"
+      sha256 "52fe7215d2f128848143a157faf641d1414b88a0e4c8a268f874e2c614a33ca9"
     else
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.95.2/yaver-linux-amd64.tar.gz"
-      sha256 "2c97cbb2e5e954083adce960e59e3a1d485e162b63b8dfcede75c313997238cd"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.95.3/yaver-linux-amd64.tar.gz"
+      sha256 "bae44d1c0d8e855c57c4919ee3b19adc24ffe32deb447ca39a06df8cee0f5e12"
     end
   end
 
