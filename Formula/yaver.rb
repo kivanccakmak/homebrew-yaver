@@ -1,8 +1,8 @@
 class Yaver < Formula
   desc "AI coding agent on your phone — P2P remote control for Claude Code, Codex, Aider, Ollama"
   homepage "https://yaver.io"
-  version "1.96.11"
-  license "AGPL-3.0-only"
+  version "1.96.12"
+  license :cannot_represent   # FSL-1.1-Apache-2.0; see LICENSING.md
 
   # Runtime dep: `yaver push` shells out to `npm exec --package
   # yaver-cli@<version>` which pulls hermesc + the RN bundler on
@@ -13,21 +13,21 @@ class Yaver < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.96.11/yaver-darwin-arm64.tar.gz"
-      sha256 "79451c90832f3f064e90151224328f8c588cfa0d608631683a5eeb6c7e873b42"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.96.12/yaver-darwin-arm64.tar.gz"
+      sha256 "2c5d1761faef054e8a6b1338486bb20c23d479eb2aa4c77a7aefa1466f91eec0"
     else
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.96.11/yaver-darwin-amd64.tar.gz"
-      sha256 "f6a9d025a0c8a8bd97b28eed188959d74b2638e9f93b0d7a6c70dda13b823228"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.96.12/yaver-darwin-amd64.tar.gz"
+      sha256 "70fc8bc2263ab10f64a96d45dc0274f332a03eee1e3ea0d15965ef404c93359b"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.96.11/yaver-linux-arm64.tar.gz"
-      sha256 "c48b54dc699a3387df6f53cac62b1b936bc9671170544beaeafbc57ebc65367d"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.96.12/yaver-linux-arm64.tar.gz"
+      sha256 "930c5b17fdf2238ebe42533a2d326ba7eeae1be42805243b6ea4c27bba215bb5"
     else
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.96.11/yaver-linux-amd64.tar.gz"
-      sha256 "3fcf4de0d3d4ad196f48432a629b7513cb4a68230421981f1f36954b07758003"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.96.12/yaver-linux-amd64.tar.gz"
+      sha256 "2462fc14ac9cd54ffd95c1ab5f43632b97687be7465c14123d444338942c7f92"
     end
   end
 
