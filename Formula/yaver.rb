@@ -1,7 +1,7 @@
 class Yaver < Formula
   desc "AI coding agent on your phone — P2P remote control for Claude Code, Codex, Aider, Ollama"
   homepage "https://yaver.io"
-  version "1.99.75"
+  version "1.99.77"
   license :cannot_represent   # FSL-1.1-Apache-2.0; see LICENSING.md
 
   # Runtime dep: `yaver push` shells out to `npm exec --package
@@ -13,21 +13,21 @@ class Yaver < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.99.75/yaver-darwin-arm64.tar.gz"
-      sha256 "f8742ef3035bac0a09ab24893f00761a6369757611be38f6e2d0feba979a89ff"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.99.77/yaver-darwin-arm64.tar.gz"
+      sha256 "be81d65b2e9046e63faeda9dc116800b9e808ccf1132e091d9fe599b47737c03"
     else
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.99.75/yaver-darwin-amd64.tar.gz"
-      sha256 "835966e243a8f14f1386d9b8a5fe931bdf6da0a4b2a374a48ad071b20959e958"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.99.77/yaver-darwin-amd64.tar.gz"
+      sha256 "a7533150bb008db7e8f9ca80524590b3f3231945c703ab976b5b6e5ac0648b83"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.99.75/yaver-linux-arm64.tar.gz"
-      sha256 "e8bca7766d61df629980c5317b29edda4d9ca4679706244adfc78b72992a5cf7"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.99.77/yaver-linux-arm64.tar.gz"
+      sha256 "9cc1c5c22d99d03dd399afa9d2673d9847d2ae4ff22eda2eb709a4405c33cbec"
     else
-      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.99.75/yaver-linux-amd64.tar.gz"
-      sha256 "70ad3d1e6924bd392e5317e0b25723f2f2fcd471d02aaa9f1b85aad752517789"
+      url "https://github.com/kivanccakmak/yaver.io/releases/download/v1.99.77/yaver-linux-amd64.tar.gz"
+      sha256 "cffa15f2ac5d781122a12aacf526e743813942a6cfed7899f0417a2e659e695b"
     end
   end
 
